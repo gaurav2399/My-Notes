@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="155dp"
+              android:layout_marginStart="10dp"
+              android:layout_height="120dp">
+
+    <androidx.cardview.widget.CardView
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    tools:text="My First Note"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/text_view_title"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxLength="18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    tools:text="Note Description hello world my name is gaurav sharma"
+                    android:layout_below="@id/text_view_title"
+                    android:id="@+id/text_view_note"
+                    android:layout_width="match_parent"
+                    android:maxLines="3"
+                    android:textSize="15sp"
+                    android:ellipsize="end"
+                    android:maxLength="54"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

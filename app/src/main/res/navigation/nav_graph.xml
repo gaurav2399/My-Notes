@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homeFragmet">
+
+    <fragment android:id="@+id/homeFragmet" android:name="com.smartherd.notesapproom.ui.HomeFragmet"
+              android:label="My Notes" tools:layout="@layout/fragment_home_fragmet">
+        <action android:id="@+id/actionAddNote" app:destination="@id/addNoteFragment"/>
+    </fragment>
+    <fragment android:id="@+id/addNoteFragment" android:name="com.smartherd.notesapproom.ui.AddNoteFragment"
+              android:label="Add Note" tools:layout="@layout/fragment_add_note">
+        <action android:id="@+id/actionSaveNote" app:destination="@id/homeFragmet"/>
+        <argument android:name="note" app:argType="com.smartherd.notesapproom.db.Note" app:nullable="true"
+                  android:defaultValue="@null"/>
+    </fragment>
+</navigation>

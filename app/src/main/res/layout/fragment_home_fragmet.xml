@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/recycler_background"
+                    tools:context=".ui.HomeFragmet">
+        <include layout="@layout/toolbar"
+                 android:id="@+id/home_toolbar"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_view_notes"/>
+    <ImageView android:layout_width="300dp" android:layout_height="400dp"
+               android:visibility="visible"
+               android:id="@+id/emptyImage"
+               android:src="@drawable/add_notes" android:layout_centerHorizontal="true"
+               android:layout_alignParentTop="true" android:layout_marginTop="156dp"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="wrap_content"
+                android:text="@string/add_note"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/add"
+                app:icon="@drawable/ic_plus_24px"
+                app:iconTint="#ffff"
+                android:background="@drawable/bg_fab"
+                android:backgroundTint="@color/floatingButton"
+                app:strokeColor="#000"
+                app:strokeWidth="2dp"
+                app:layout_dodgeInsetEdges="end"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+        />
+
+
+    </RelativeLayout>
+
